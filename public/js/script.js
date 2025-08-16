@@ -21,3 +21,19 @@
     );
   });
 })();
+
+// Make filters shift down when hamburger menu is clicked
+document.addEventListener('DOMContentLoaded', function() {
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  
+  if (navbarCollapse) {
+    // Listen for Bootstrap collapse events
+    navbarCollapse.addEventListener('show.bs.collapse', function() {
+      document.body.classList.add('navbar-expanded');
+    });
+
+    navbarCollapse.addEventListener('hide.bs.collapse', function() {
+      document.body.classList.remove('navbar-expanded');
+    });
+  }
+});

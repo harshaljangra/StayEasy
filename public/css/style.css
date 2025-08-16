@@ -13,6 +13,17 @@ body {
   height: 5rem;
   background-color: white;
 }
+
+/* Fix hamburger menu overlap with filters */
+#filters {
+  transition: margin-top 0.3s ease;
+}
+
+/* When navbar is expanded, shift filters down */
+body.navbar-expanded #filters {
+  margin-top: 10rem;
+}
+
 .fa-compass {
   color: #fe424d;
   font-size: 2rem;
@@ -128,7 +139,26 @@ footer {
 
 #map {
   height: 400px;
-  width: 80vh;
+  width: 100%;
+  max-width: 80vh;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsive map */
+@media (max-width: 768px) {
+  #map {
+    height: 300px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  #map {
+    height: 250px;
+    width: 100%;
+    max-width: 100%;
+  }
 }
