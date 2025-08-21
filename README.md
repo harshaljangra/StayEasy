@@ -230,13 +230,6 @@ Make sure to set these environment variables in your deployment platform:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the ISC License.
-
-## 👨‍💻 Author
-
-**StayEasy Private Limited**
 
 ## 🙏 Acknowledgments
 
@@ -246,12 +239,6 @@ This project is licensed under the ISC License.
 - [Cloudinary](https://cloudinary.com/) - Image management
 - [Bootstrap](https://getbootstrap.com/) - CSS framework
 
-## 📞 Support
 
-For support and questions, please contact:
-
-- Website: [StayEasy](https://stayeasy-82vr.onrender.com)
-
----
 
 ⭐ If you find this project helpful, please give it a star!
